@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contribution-map {
+    display: grid;
+    grid-template-columns: repeat(53, 12px); /* 52 weeks + 1 for spacing */
+    gap: 3px;
+    margin-bottom: 20px;
+}
+
+.contribution-box {
+    width: 12px;
+    height: 12px;
+    background-color: #ebedf0;
+    cursor: pointer;
+}
+
+.contribution-box.level-1 { background-color: #c6e48b; }
+.contribution-box.level-2 { background-color: #7bc96f; }
+.contribution-box.level-3 { background-color: #239a3b; }
+.contribution-box.level-4 { background-color: #196127; }
+
+.date-display {
+    font-size: 1.2em;
+    color: #333;
+}
